@@ -1,0 +1,16 @@
+// Based on font-family variant's usage, SCSS will generate those font-family and will omit if something is unused.
+body {
+    font-family: 'muliregular', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'oswald_regularregular', sans-serif;
+}

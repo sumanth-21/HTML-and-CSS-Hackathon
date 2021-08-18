@@ -1,0 +1,176 @@
+//muli regular
+@font-face {
+    font-family: 'muliregular';
+    src: url('../fonts/muli-webfont.eot');
+    src: url('../fonts/muli-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli-webfont.woff2') format('woff2'), url('../fonts/muli-webfont.woff') format('woff'), url('../fonts/muli-webfont.ttf') format('truetype'), url('../fonts/muli-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//oswald regular
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/oswald-regular-webfont.woff2') format('woff2'), url('../fonts/oswald-regular-webfont.woff') format('woff'), url('../fonts/oswald-regular-webfont.ttf') format('truetype'), url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Iconography
+@font-face {
+    font-family: 'font-awesome';
+    src: url('../fonts/font-awesome.eot?ijrvs9');
+    src: url('../fonts/font-awesome.eot?ijrvs9#iefix') format('embedded-opentype'), url('../fonts/font-awesome.ttf?ijrvs9') format('truetype'), url('../fonts/font-awesome.woff?ijrvs9') format('woff'), url('../fonts/font-awesome.svg?ijrvs9#font-awesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'font-awesome' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart-outline:before {
+    content: "\e900";
+}
+
+.icon-filled-heart:before {
+    content: "\e901";
+}
+
+.icon-search:before {
+    content: "\e902";
+}
+
+.icon-quote-left:before {
+    content: "\e903";
+}
+
+.icon-share-square:before {
+    content: "\e904";
+}
+
+.icon-play-circle:before {
+    content: "\e905";
+}
+
+.icon-angle-left:before {
+    content: "\e906";
+}
+
+.icon-angle-right:before {
+    content: "\e907";
+}
+
+.icon-bars:before {
+    content: "\e908";
+}
+
+.icon-close:before {
+    content: "\e909";
+}
+
+.icon-youtube:before {
+    content: "\e90a";
+}
+
+.icon-instagram:before {
+    content: "\e90b";
+}
+
+.icon-twitter:before {
+    content: "\e90c";
+}
+
+.icon-facebook:before {
+    content: "\e90d";
+}
+
+.icon-google-plus:before {
+    content: "\e90e";
+}
+
+.icon-star:before {
+    content: "\e90f";
+}
+
+.icon-image:before {
+    content: "\e910";
+}
+
+.icon-home:before {
+    content: "\e911";
+}
+
+.icon-mobile:before {
+    content: "\e912";
+}
+
+.icon-dropdown:before {
+    content: "\e913";
+}
+
+.icon-caret-right:before {
+    content: "\e914";
+}
+
+.icon-map-marker:before {
+    content: "\e915";
+}
+
+.icon-envelope-outline:before {
+    content: "\e916";
+}
+
+.icon-envelope-filled:before {
+    content: "\e917";
+}
+
+
+@font-face {
+    font-family: 'flat-icon';
+    src: url('../fonts/flat-icon.eot?4d8459');
+    src: url('../fonts/flat-icon.eot?4d8459#iefix') format('embedded-opentype'), url('../fonts/flat-icon.ttf?4d8459') format('truetype'), url('../fonts/flat-icon.woff?4d8459') format('woff'), url('../fonts/flat-icon.svg?4d8459#flat-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.gym {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'flat-icon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 2.5;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.gym-dumbell:before {
+    content: "\ea1";
+}
+
+.gym-heart-beat:before {
+    content: "\ea2";
+}
+
+.gym-juice:before {
+    content: "\ea3";
+}
+
+.gym-stationary-bike:before {
+    content: "\ea4";
+}

@@ -1,0 +1,75 @@
+.aboutus {
+    display: flex;
+    color: $text-color;
+    background-color: black;
+    &__video-bg {
+        flex-basis: 50%;
+        background: url("../img/aboutus.png") center no-repeat;
+        background-size: cover;
+        height: 64rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .play-btn {
+            display: inline-block;
+            height: 7rem;
+            width: 7rem;
+            background: $primary-color;
+            border-radius: 50%;
+            line-height: 7rem;
+            text-align: center;
+            font-size: $font-size-XXXVI;
+        }
+    }
+    &__text {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 12rem 7rem 0 7rem;
+        hgroup {
+            margin-bottom: 3rem;
+            h2 {
+                @include section-heading;
+            }
+            h3 {
+                @include section-title;
+            }
+        }
+        p {
+            @include para;
+            color: $para-color;
+        }
+        #{&}__bar {
+            .ab-item {
+                margin-bottom: 34px;
+                p {
+                    color: $text-color;
+                }
+                .bar {
+                    background: $bar-color;
+                    height: .5rem;
+                    box-shadow: inset .1rem .4rem .9rem -0.6rem $bar-shadow;
+                    .fill {
+                        background: $text-color;
+                        height: 100%;
+                        transition: width 2s ease-in-out 0s;
+                    }
+                    #fill1 {
+                        width: 80%;
+                    }
+                    #fill2 {
+                        width: 85%;
+                    }
+                    #fill3 {
+                        width: 75%;
+                    }
+                    .percentage {
+                        font-size: $font-size-XIV;
+                        background: transparent;
+                        float: right;
+                        margin-top: -4rem;
+                    }
+                }
+            }
+        }
+    }
+}

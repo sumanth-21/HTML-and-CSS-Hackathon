@@ -1,0 +1,302 @@
+.classes-details {
+    background-color: $black-600;
+    display: block;
+    padding-bottom: 6rem;
+    padding-top: 10rem;
+    
+    &__container {
+        @include container;
+    }
+
+    &__row {
+        color: $gray-900;
+        display: flex;
+        column-gap: 4.5rem;
+
+        &__col-1{
+            font-size: $font-size-X;
+            font-family: $font-face-muli;
+            font-weight: weight(regular);
+            line-height: 1.5;
+            text-align: left;
+            flex-basis: 66.6667%;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+
+            &__classes-details-img {
+                margin-bottom: 4.5rem;
+
+                img {
+                    max-width: 100%;
+                    vertical-align: middle;
+                }
+            }
+
+            &__common-information {
+
+                h3 {
+                    color: $white;
+                    font-size: $font-size-XXX;
+                    font-family: $font-face-oswald;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 2.8rem;
+                }
+
+                p {
+                    font-size: $font-size-XIV;
+                    font-weight: weight(regular);
+                    line-height: 2.4rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            &__trainer-details {
+                margin-top: 3.3rem;
+
+                &__row1 {
+                    //column-gap: 1.5rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-right: -1.5rem;
+                    margin-left: -1.5rem;
+
+                    &__col1 {
+                        flex-basis: 50%;
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
+
+                        img {
+                            min-width: 100%;
+                            max-width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    &__col2 {
+                        color: $gray-1000;
+                        flex-basis: 50%;
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
+                        position: relative;
+
+                        &__position {
+                            position: relative;
+                        }
+
+                        &__header {
+                            margin-bottom: 1.8rem;
+
+                            h4 {
+                                color: $white;
+                                font-size: $font-size-XXIV;
+                                font-family: $font-face-oswald;
+                                font-weight: weight(medium-high);
+                                line-height: 1.2;
+                                margin-bottom: 0.6rem;
+                            }
+
+                            small {
+                                color: $gray-1100;
+                                font-size: $font-size-XII;
+                                font-weight: weight(regular);
+                                line-height: 1.5;
+                            }
+                        }
+
+                        nav {
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 2rem;
+
+                            ul {
+
+                                li {
+                                    display: inline-block;
+                                    font-size: $font-size-XIV;
+                                    margin-right: 0.9rem;
+
+                                    a {
+                                       color: $gray-1000;
+                                    }
+
+                                }
+
+                                li:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+
+                        p {
+                           font-size: $font-size-XIV;
+                           font-weight: weight(regular);
+                           margin-bottom: 1.5rem; 
+                        }
+
+                        &__trainer-information {
+                            margin-top: 2.8rem;
+                            margin-bottom: 2.6rem;
+
+                            li {
+                                color: $white;
+                                font-weight: weight(bold);
+                                border-bottom: 0.1rem solid $dropdown-bg;
+                                font-size: $font-size-XIV;
+                                margin-bottom: 1rem;
+                                padding-bottom: 0.8rem;
+
+                                span {
+                                    float: right;
+                                    font-weight: weight(regular);
+                                    margin-right: 10rem;
+                                    text-align: left;
+                                    width: 15rem;
+                                    color: $gray-1000;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__col-2 {
+            flex-basis: 33.333333%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            &__categories {
+                margin-bottom: 4rem;
+
+                h4 {
+                    color: $white;
+                    font-size: $font-size-XX;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 2.4rem;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: $gray-1000;
+                            font-size: $font-size-XIV;
+                            line-height: 4rem;
+                        }
+
+                        span {
+                            float: right;
+                            font-size: $font-size-XII;
+                        }
+                    }
+
+                    li:hover {
+                        a {
+                            color: $orange;
+                        }
+
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            &__latest-posts {
+                margin-bottom: 6rem;
+
+                h4 {
+                    color: $white;
+                    font-size: $font-size-XX;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 4rem;
+                }
+
+                &__japaneese-text {
+                    background: url("../img/latest-1.png")  no-repeat;
+                    background-size: cover;
+                    height: 20rem;
+                    max-width: 100%;
+                    margin-bottom: 3rem;
+                    position: relative;
+
+                    &__text {
+                        bottom: 1.8rem;
+                        left: 0;
+                        padding: 0 2.5rem;
+                        position: absolute;
+
+                        a {
+                            color: $white;
+                            font-size: $font-size-XVIII;
+                            font-family: $font-face-oswald;
+                            font-weight: weight(medium-high);
+                        }
+
+                        ul {
+                            li {
+                                color: $gray-500;
+                                display: inline-block;
+                                font-size: $font-size-XII;
+                                margin-right: 2.5rem;
+                            }
+                        }
+                    }
+                }
+
+                &__latest-items {
+                    
+                    &__common-item {
+                        display: flex;
+                        margin-bottom: 3rem;
+                        overflow: hidden;
+
+                        &__picture {
+                            float: left;
+                            margin-right: 2rem;
+
+                        }
+
+                        &__name {
+                            float: right;
+                            overflow: hidden;
+
+                            a {
+                                color: $white;
+                                font-size: $font-size-XV;
+                                font-family: $font-face-oswald;
+                                font-weight: weight(regular);
+                                line-height: 2.1rem;
+                            }
+
+                            span {
+                                color: $gray-500;
+                                font-size: $font-size-XII;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__banner {
+                background: url("../img/sidebar-banner.png") no-repeat;
+                background-size: cover;
+                height: 30rem;
+                position: relative;
+                
+                h4 {
+                    color: $white;
+                    font-size: $font-size-XX;
+                    font-family: $font-face-oswald;
+                    font-weight: weight(medium-high);
+                    left: 0;
+                    bottom: 3rem;
+                    width: 100%;
+                    padding: 0 3rem;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

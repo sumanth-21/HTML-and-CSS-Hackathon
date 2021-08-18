@@ -1,0 +1,146 @@
+.recipe {
+    padding: 15rem 1.5rem;
+    &__container {
+        @include container;
+        justify-content: space-between;
+    }
+    &__row-1 {
+        display: flex;
+        &__col-1 {
+            flex-basis: 66.6667%;
+            &__item {
+                display: flex;
+                margin-bottom: 4rem;
+                &__picture {
+                    flex-basis: 46.153%;
+                    img {
+                        width: 360px;
+                        height: 240px;
+                        margin-bottom: -0.5rem;
+                    }
+                }
+                &__information {
+                    flex-basis: 53.846%;
+                    overflow: hidden;
+                    border: 0.1rem solid $gray-dark;
+                    height: 24rem;
+                    padding: 3.2rem 3rem 0 3rem;
+                    a {
+                        color: $gray-dark;
+                        font-size: $font-size-XX;
+                        font-weight: weight(medium-high);
+                        font-family: "oswald_regularregular";
+                        line-height: 2.8rem;
+                        text-decoration: none;
+                    }
+                    ul {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                        li {
+                            color: $gray-500;
+                            display: inline-block;
+                            font-size: $font-size-XII;
+                            font-family: $font-face-muli;
+                            margin-right: .5rem;
+                        }
+                        li:first-child::after {
+                            padding-left: 1.5rem;
+                            content: "|";
+                        }
+                    }
+                    p {
+                        color: #222020;
+                        line-height: 2.2rem;
+                    }
+                }
+            }
+        }
+        &__col-2 {
+            flex-basis: 33.333333%;
+            padding-left: 8.5rem;
+            &__categories {
+                margin-bottom: 4rem;
+                h4 {
+                    color: #006f46;
+                    font-size: $font-size-XX;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 2.4rem;
+                }
+                ul {
+                    li {
+                        a {
+                            color: #2E2D2B;
+                            font-size: $font-size-XIV;
+                            line-height: 4rem;
+                        }
+                        span {
+                            float: right;
+                            font-size: $font-size-XII;
+                        }
+                    }
+                    li:hover {
+                        a {
+                            color: $orange;
+                        }
+                        span {
+                            color: #006f46;
+                        }
+                    }
+                }
+            }
+
+            &__feature {
+                margin-bottom: 6rem;
+                h4 {
+                    color: #006f46;
+                    font-size: $font-size-XX;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 4rem;
+                }
+                &__latest-items {
+                    &__common-item {
+                        display: flex;
+                        margin-bottom: 3rem;
+                        &__picture {
+                            margin-right: 2rem;
+                            img {
+                                width: 120px;
+                                height: 80px;
+                            }
+                        }
+                        &__name {
+                            a {
+                                color: #2E2D2B;
+                                font-size: $font-size-XV;
+                                font-family: $font-face-oswald;
+                                font-weight: weight(regular);
+                                line-height: 2.1rem;
+                            }
+                            span {
+                                color: $gray-500;
+                                font-size: $font-size-XII;
+                            }
+                        }
+                    }
+                }
+            }
+            &__banner {
+                background: url("../img/sidebar-banner.png") no-repeat;
+                background-size: cover;
+                height: 30rem;
+                position: relative;
+                h4 {
+                    color: $white;
+                    font-size: $font-size-XX;
+                    font-family: $font-face-oswald;
+                    font-weight: weight(medium-high);
+                    left: 0;
+                    bottom: 3rem;
+                    width: 100%;
+                    padding: 0 3rem;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

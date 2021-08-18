@@ -1,0 +1,41 @@
+.register {
+    background: url("../img/banner-bg.png") center no-repeat padding-box;
+    height: 55rem;
+    display: flex;
+    .container {
+        @include container;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: weight(bold);
+        text-align: center;
+        padding: 0 1.5rem;
+        h2 {
+            font-size: $font-size-XLVIII;
+            line-height: $line-height-XV;
+            margin-bottom: 2.5rem;
+        }
+        div {
+            font-size: $font-size-XX;
+            color: $para-color;
+            margin-bottom: 4.5rem;
+        }
+        a {
+            display: inline-block;
+            font-size: $font-size-XIV;
+            padding: 1.7rem 3rem 1.6rem;
+            letter-spacing: .1rem;
+            border: .2rem solid $primary-color;
+            &:hover {
+                background: $hover-color;
+            }
+        }
+        i {
+            color: $primary-color;
+            font-size: $font-size-LX;
+            width: 6.5rem;
+            border-radius: 50%;
+            line-height: 6.5rem;
+        }
+    }
+}

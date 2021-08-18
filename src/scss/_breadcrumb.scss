@@ -1,0 +1,37 @@
+    .breadcrumnb-section {
+        background-image: url('../img/breadcrumb-bg.png');
+        height: 50rem;
+        padding-top: 23rem;
+        background-position: top center;
+        display: block;
+        .col-12 {
+            text-align: center !important;
+            .bd-text {
+                h2 {
+                    font-size: $font-size-XXXXXX;
+                    color: $white;
+                    font-weight: weight(medium-high);
+                    margin-bottom: 2.4rem;
+                }
+                div {
+                    font-family: 'muliregular', sans-serif;
+                    a {
+                        font-size: $font-size-XVIII;
+                        color: $white;
+                        font-weight: weight(medium-high);
+                        margin-right: 2rem;
+                        span {
+                            color: $primary-color;
+                        }
+                    }
+                    i {
+                        color: $white;
+                        position: absolute;
+                        top: 31.2rem;
+                        margin-left: -1.5rem;
+                        font-size: $font-size-XVIII;
+                    }
+                }
+            }
+        }
+    }

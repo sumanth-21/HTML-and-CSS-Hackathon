@@ -1,0 +1,120 @@
+.get-in-touch {
+    background: $primary;
+    padding: 10rem 3rem;
+    .contact-container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+        .col-12 {
+            display: flex;
+            .col-6 {
+                text-align: left;
+                margin-bottom: 3.5rem;
+                width: 50%;
+                span {
+                    font-size: $font-size-XVI;
+                    color: $primary-color;
+                    font-weight: weight(bold);
+                }
+                h2 {
+                    color: $white;
+                    font-size: $font-size-XXXII;
+                    font-weight: weight(medium-high);
+                    margin-top: 1.8rem;
+                    margin-bottom: 3rem;
+                }
+                address {
+                    .details {
+                        overflow: hidden;
+                        margin-bottom: 3.5rem;
+                        i {
+                            color: $primary-color;
+                            font-size: $font-size-XXX;
+                            display: inline-block;
+                            height: 6.5rem;
+                            width: 6.5rem;
+                            border-radius: 50%;
+                            background: $gray-dark;
+                            line-height: 6.5rem;
+                            text-align: center;
+                            float: left;
+                            margin-right: 2rem;
+                        }
+                        p {
+                            font-size: $font-size-XIV;
+                            overflow: hidden;
+                            color: #c4c4c4;
+                            margin-top: 1.8rem;
+                        }
+                        ul {
+                            overflow: hidden;
+                            padding-top: 2rem;
+                            li {
+                                list-style-type: none;
+                                font-size: 14px;
+                                color: $para-color;
+                                margin-right: 2.5rem;
+                                display: inline-block;
+                                position: relative;
+                            }
+                            & li:first-child::after {
+                                padding: 0 1.8rem;
+                                content: "|";
+                            }
+                            li:last-child {
+                                margin-left: -3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-6-form {
+                width: 50%;
+                form {
+                    display: block;
+                    margin-top: 0rem;
+                    input {
+                        font-size: $font-size-XIII;
+                        color: $para-color;
+                        width: 100%;
+                        height: 4.6rem;
+                        border: 0.1rem solid $gray-dark;
+                        padding-left: 2rem;
+                        padding-right: 0.5rem;
+                        background: transparent;
+                        margin-bottom: 2rem;
+                    }
+                    textarea {
+                        font-size: $font-size-XIII;
+                        color: $para-color;
+                        width: 100%;
+                        height: 10rem;
+                        border: 0.1rem solid $gray-dark;
+                        padding-left: 2rem;
+                        padding-top: 1.2rem;
+                        padding-right: 0.5rem;
+                        background: transparent;
+                        margin-bottom: 1.4rem;
+                        resize: none;
+                    }
+                    button {
+                        font-size: $font-size-XIV;
+                        color: $text-color;
+                        font-weight: weight(bold);
+                        width: 100%;
+                        border: none;
+                        padding: 1.4rem 0 1.2rem;
+                        background: $hover-color;
+                    }
+                }
+            }
+        }
+        .map {
+            height: 5.5rem;
+            margin-top: 3.5rem;
+            margin-bottom: 50rem;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}

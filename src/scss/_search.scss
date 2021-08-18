@@ -1,0 +1,19 @@
+/*Search-Page*/
+.search {
+    // height: 62.5rem;
+    // position: relative;
+
+    .close {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+
+        button {
+            @include search-prop;
+        }
+    }
+
+    input {
+        @include search-here;
+    }
+}

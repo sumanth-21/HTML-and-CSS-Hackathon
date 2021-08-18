@@ -1,0 +1,140 @@
+.contact {
+    background: $contact-bg-color;
+    padding: 3rem 0 1.5rem;
+
+    .container {
+        @include footer-container;
+        padding: 0 1.5rem;
+         div {
+            flex-basis: 33.333333%;
+            max-width: 33.333333%;
+            display: flex;
+            padding: 0 1.5rem 3rem 1.5rem;
+            font-family: 'muliregular', sans-serif;
+
+            &>i {
+                font-size: $font-size-XXX;
+                height: 6.5rem;
+                min-width: 6.5rem;
+                background: $primary-color;
+                border-radius: 50%;
+                line-height: $line-height-LXV;
+                text-align: center;
+                margin-right: 2rem;
+            }
+            &.location p {
+                @include para;
+                padding-top: 1rem;
+            }
+            ul {
+                display: flex;  
+                padding-top: 2rem;
+                & li:first-child::after {
+                    padding: 0 1.8rem;
+                    content: "|";
+                    color: $pipe-color;
+                } 
+            }
+            &.mail p {
+                @include para;
+                overflow: hidden;
+                padding-top: 2rem;
+            }
+        }
+    }
+}
+
+footer {
+    background: $black;
+    padding-top: 5rem;
+    .container {
+        @include footer-container;
+        flex-wrap: wrap;
+        &>div {
+            padding: 0 1.5rem 5rem 1.5rem;
+        }
+        .about {
+            flex-basis: 33.33%;
+            &__gym-logo {
+                margin-bottom: 3rem;
+            } 
+            p {
+                @include para;
+                color: $para-color;
+                line-height: $line-height-XXVI;
+            }
+            &__nav-media ul li {
+                display: inline-block;
+                margin-right: 1.5rem;
+            }
+        }
+        .links {
+            flex-basis: 16.66%;
+            h4 {
+                @include h4;
+            }
+            &__list li a {
+                color: $para-color;
+                line-height: $line-height-XXX;
+            }
+        }
+        .support {
+            @extend .links;
+            flex-basis: 16.66%;
+        }
+        .tips {
+            flex-basis: 33.33%;
+            div:first-of-type {
+                margin-bottom: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: .1rem solid $tips-border-color;
+            }
+            h4 {
+                @include h4;
+            }
+            &__description {
+                h6 {
+                    font-size: $font-size-XVI;
+                    font-weight: weight(regular);
+                    margin-bottom: .6rem;
+                    line-height: $line-height-XII;
+                    a {
+                        color: $para-color;
+                        letter-spacing: .05rem;
+                    }
+                }
+                &__info-list li {
+                    display: inline-block;
+                    color: $info-color;
+                    font-size: $font-size-XII;
+                    line-height: $line-height-XV;
+                    &:first-child::after {
+                        padding: 0 1.6rem;
+                        content: "|";
+                        color: $pipe-color;
+                    } 
+                }
+            }
+        }
+
+        .copy-right {
+            color: $gray-700;
+            font-family: 'muliregular', sans-serif;
+            flex-basis: 100%;
+            text-align: center;
+            padding: 2.5rem 0;
+            margin-top: 1.5rem;
+            border-top: 0.1rem solid $tips-border-color;
+
+            p {
+                @include para;
+                letter-spacing: .05rem;
+
+                i, span {
+                    color: $primary-color;
+                }
+            }
+
+        }
+    }
+}

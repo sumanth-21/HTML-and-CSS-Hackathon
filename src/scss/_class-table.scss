@@ -1,0 +1,75 @@
+.class-timetable {
+    @include container;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    display: block;
+    padding-bottom: 10rem;
+    &__title {
+        margin-bottom: 3.5rem;
+        h5 {
+            font-size: $font-size-XX;
+            color: $text-color;
+            font-weight: weight('medium-high');
+        }
+    }
+    &__table {
+        border: .1rem solid $gray-dark;
+        text-align: center;
+        thead {
+            border-bottom: .1rem solid $gray-dark;
+            tr th {
+                font-size: $font-size-XIV;
+                color: $text-color;
+                background: $primary-color;
+                border-right: .1rem solid $gray-dark;
+                padding: 1.5rem 0;
+                font-weight: weight(regular);
+            }
+        }
+        tbody {
+            tr td {
+                width: 14.6rem;
+                padding: 3.5rem 0;
+                &.class-time {  
+                    display: table-cell;
+                    vertical-align: middle;
+                    font-size: $font-size-XII;
+                    color: $primary-color;
+                    background: $black;
+                    border: .1rem solid $gray-dark;
+                }
+                &.blank-td {
+                    position: relative;
+                    overflow: hidden;
+                    &::after {
+                        @include position(absolute,-4.7rem,6.4rem,$w: 23.7rem,$bg: $gray-dark);
+                        height: 1px;
+                        content: "";
+                        transform: rotate(-42deg);
+                    }
+                }
+                &:hover {
+                    h5 {
+                        color: $text-color;
+                    }
+                    span {
+                        color: $gray-700;
+                    }
+                }
+                h5 {
+                    font-size: $font-size-XVIII;
+                    color:  $cell-heading;
+                    font-weight: weight('medium-high');
+                    margin-bottom: 1rem;
+                }
+                span {
+                    color: $gray-dark;
+                }
+            }
+            tr:nth-child(odd) td:nth-child(even),
+            tr:nth-child(even) td:nth-child(odd) {
+                background: $contact-bg-color;
+            }
+        }
+    }
+}

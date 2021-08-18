@@ -1,0 +1,61 @@
+// OUR TEAMS
+.team {
+    &__wrapper {
+        margin: 0 10rem;
+        &__block {
+            display: flex;
+            flex-wrap: wrap;
+            &__image {
+                //flex: 30%;
+                align-content: center;
+                align-items: center;
+                margin-top: 5rem;
+                margin-left: 2rem;
+                overflow: hidden;
+                transition: all 0.3s;
+                &:hover {
+                    position: relative;
+                    .team__wrapper__block__text {
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        text-align: center;
+                        bottom: 0rem;
+                        background-color: $black;
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                        z-index: 1;
+                        &::before {
+                            @include diagonal-line;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team__wrapper__block__text {
+    display: none;
+    h4 {
+        text-align: center;
+        font-size: $font-size-XXIV;
+        color: $white;
+    }
+    h5 {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: $font-size-XIV;
+        color: $gray-700;
+        font-weight: bold;
+    }
+    .nav-media ul {
+        margin-top: 1.5rem;
+        li {
+            display: inline-block;
+            color: $gray-700;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+    }
+}

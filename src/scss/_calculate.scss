@@ -1,0 +1,123 @@
+.calculate {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    &__calc-container {
+        position: relative;
+        display: flex;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        &__col-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 2.5rem;
+            padding-left: 2.5rem;
+            &__chart-title {
+                text-align: left;
+                margin-bottom: 4.5rem;
+                span {
+                    font-size: $font-size-XVI;
+                    color: $primary-color;
+                    font-weight: weight(bold);
+                }
+                h2 {
+                    color: $white;
+                    font-size: $font-size-XXXII;
+                    font-weight: weight(medium-high);
+                    margin-top: 1.8rem;
+                }
+            }
+            &__chart-table {
+                table {
+                    border: 0.1rem solid $gray-dark;
+                    border-collapse: collapse;
+                    width: 100%;
+                    thead {
+                        border-bottom: 0.1rem solid $gray-dark;
+                        th {
+                            background: $black;
+                            font-size: $font-size-XIV;
+                            color: $white;
+                            font-weight: weight(medium);
+                            border-right: 0.1rem solid $gray-dark;
+                            padding: 1.4rem 17rem 1.4rem 5rem;
+                        }
+                    }
+                    tbody {
+                        td {
+                            font-size: $font-size-XIV;
+                            color: $para-color;
+                            border-right: 0.1rem solid $gray-dark;
+                            padding: 1.7rem 0 1.7rem 5rem;
+                            .point {
+                                width: 20rem;
+                            }
+                        }
+                        tr:nth-child(even) {
+                            background: $table-bg;
+                        }
+                    }
+                }
+            }
+        }
+        &__col-6-bmi {
+            position: relative;
+            width: 100%;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+            &__calculate-title {
+                text-align: left;
+                margin-bottom: 4.5rem;
+                span {
+                    font-size: $font-size-XVI;
+                    color: $primary-color;
+                    font-weight: weight(bold);
+                }
+                h2 {
+                    color: $white;
+                    font-size: $font-size-XXXII;
+                    font-weight: weight(medium-high);
+                    margin-top: 1.8rem;
+                }
+            }
+            &__calculate-form {
+                p {
+                    color: $para-color;
+                    margin-bottom: 2.4rem;
+                    font-size: $font-size-XIV;
+                    font-family: "Muliregular", sans-serif;
+                    line-height: $line-height-XXIV;
+                }
+                .row {
+                    .inputs {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        input {
+                            flex: 40%;
+                            margin-left: 2rem;
+                            font-size: $font-size-XIV;
+                            color: $para-color;
+                            width: 100%;
+                            height: 5rem;
+                            border: 0.1rem solid $gray-dark;
+                            padding-left: 2rem;
+                            padding-right: 0.5rem;
+                            background: transparent;
+                            margin-bottom: 2rem;
+                        }
+                        button {
+                            margin-left: 2rem;
+                            font-size: $font-size-XIV;
+                            color: $white;
+                            font-weight: weight(bold);
+                            width: 100%;
+                            border: none;
+                            padding: 1.5rem 0;
+                            background: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
